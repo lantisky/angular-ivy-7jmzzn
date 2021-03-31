@@ -1,0 +1,7 @@
+p {
+  font-family: Lato;
+}
+.horz ul li a:visited {
+  position: relative;
+  border: 4px inset #900;
+}
