@@ -32,7 +32,8 @@
 </table>
 <br>
 <!-- 4:  -->
-<iframe src="https://angular-ivy-7jmzzn.stackblitz.io/" name="iframe_a"></iframe>
+<iframe style="width:1000px; height:900px; overflow:auto;"
+  src="https://pbs.twimg.com/media/Ex2jnnbVEAA04XA?format=png&name=medium" name="iframe_a"></iframe>
 <p><a href="http://ptrstore.com" target="iframe_a">PtrStore</a></p>
 <!-- 5:  CSS-->
 <nav id="horz">
@@ -81,4 +82,30 @@
     <input type="radio" id="louie" name="drone" value="louie">
     <label for="louie">Louie</label>
   </div>
+</div>
+<!-- 8: function return 
+function yrsLeft() { var yrs = 65 - this.age; return yrs; } 
+-->
+<script>
+  var robbert = new person(51, 27);
+  function person(id, age) {
+  this.id = id;
+  this.age = age;
+  this.yrsUntilRetirement = yrsLeft;}
+  function yrsLeft() {
+  var yrs = 65 - this.age;
+  return yrs;
+}
+
+ document.write(robbert.yrsUntilRetirement)
+$('button')
+  .html('Click me') // Try edit it...
+  .on('click', () => console.log(robbert.yrsUntilRetirement))
+
+console.log('App started')
+</script>
+<div class="d-flex h-100">
+  <button class="btn btn-warning m-auto">
+    CLICK ME HERE
+  </button>
 </div>
