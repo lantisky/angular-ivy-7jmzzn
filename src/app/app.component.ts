@@ -51,6 +51,12 @@ export class AppComponent {
   goToPrvsPage() {
     window.history.back();
   }
-  // 7: function logic testing
-  
+  // 7: function logic testing Return undefined 3
+  question7() {
+    var arrays = new Array(3);
+    arrays["firstName"] = "April";
+    arrays[1] = "Flinch";
+    arrays[2] = "Spain";
+    console.log(arrays[0] + " " + arrays.length);
+  }
 }
