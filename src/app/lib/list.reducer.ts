@@ -1,4 +1,4 @@
-import { Action } from "@ngrx/store";
+import { Action } from '@ngrx/store';
 
 const initialState = {
   ingredients: []
@@ -6,6 +6,6 @@ const initialState = {
 export function listReducer(state = initialState, action: Action) {
   switch (action.type) {
     case "ADD_INGREDIENT":
-      return { ...state, ingredients: [...state.ingredients] }; //return to the state and never change to existing state.
+      return { ...state, ingredients: [...state.ingredients, action.type] }; //return to the state and never change to existing state.
   }
 }
